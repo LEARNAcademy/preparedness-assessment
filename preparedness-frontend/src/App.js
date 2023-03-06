@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react"
+import { Button, Input, Label } from "reactstrap"
+import ModalComponent from "./components/ModalComponent"
+import "./App.css"
 
-function App() {
+const App = () => {
+  const [modal, setModal] = useState(false)
+  const [nameFromInput, setNameFromInput] = useState("")
+  const toggle = () => setModal(!modal)
+  const handleInputValue = (e) => setNameFromInput(e.target.value)
+  const clearForm = () => setNameFromInput("")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1>Preparedness Assessment</h1>
+      <div className="form">
+        <div className="input">
+          <Label for="name">Enter your name</Label>
+          <Input onChange={handleInputValue} value={nameFromInput} />
+        </div>
+        <Button color="info" onClick={toggle}>
+          Click Me
+        </Button>
+        <Button color="info" onClick={clearForm}>
+          Reset
+        </Button>
+        <ModalComponent
+          toggle={toggle}
+          modal={modal}
+          nameFromInput={nameFromInput}
+        />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
