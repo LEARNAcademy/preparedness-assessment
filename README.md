@@ -2,6 +2,10 @@
 
 ### Frontend Assessment
 
+- [Reactstrap Modal](https://reactstrap.github.io/?path=/docs/components-modal--modal)
+- Create an input field that invites the user to enter their name
+- On submit, the user will see a model that greets them
+
 ### Backend Assessment
 
 - Go to [dbdiagram](https://dbdiagram.io/) and create a free personal account
