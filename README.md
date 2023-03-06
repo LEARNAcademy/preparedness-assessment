@@ -4,7 +4,12 @@
 
 - [Reactstrap Modal](https://reactstrap.github.io/?path=/docs/components-modal--modal)
 - Create an input field that invites the user to enter their name
+
+<img src="./preparedness-frontend/src/assets/initial-input.png" width="80%">
+
 - On submit, the user will see a model that greets them
+
+<img src="./preparedness-frontend/src/assets/modal-view.png" width="80%">
 
 ### Backend Assessment
 
