@@ -12,23 +12,25 @@ const App = () => {
 
   return (
     <>
-      <h1>Preparedness Assessment</h1>
-      <div className="form">
-        <div className="input">
-          <Label for="name">Enter your name</Label>
-          <Input onChange={handleInputValue} value={nameFromInput} />
+      <div className="entire-content" >
+        <h1>Preparedness Assessment</h1>
+        <div className="form">
+          <div className="input">
+            <Label for="name">Enter your name</Label>
+            <Input onChange={handleInputValue} value={nameFromInput} />
+          </div>
+          <Button color="info" onClick={toggle}>
+            Click Me
+          </Button>
+          <Button color="info" onClick={clearForm}>
+            Reset
+          </Button>
+          <ModalComponent
+            toggle={toggle}
+            modal={modal}
+            nameFromInput={nameFromInput}
+          />
         </div>
-        <Button color="info" onClick={toggle}>
-          Click Me
-        </Button>
-        <Button color="info" onClick={clearForm}>
-          Reset
-        </Button>
-        <ModalComponent
-          toggle={toggle}
-          modal={modal}
-          nameFromInput={nameFromInput}
-        />
       </div>
     </>
   )
