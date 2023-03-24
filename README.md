@@ -43,7 +43,7 @@ The frontend assessment is a React application with some basic code to define a 
 - The input field is centered on the page
 - There is 12px of padding on the left and the right of the input field
 - There is 6px of padding on the top and the bottom of the input field
-- The background is this [image](./preparedness-assessment/src/assets.background-image.jpeg)
+- The background is this [image](./preparedness-frontend/src/assets/background-image.jpeg)
 - The buttons are centered under the input field
 - The background color of the buttons are `#0dcaf0`
 - The color of the text on the buttons is white
